@@ -1,4 +1,4 @@
-# Notes
+# Getting started
 ## HTML basics
 - opening tag, closing tag, content = element
 <p>hello</p>
@@ -35,3 +35,20 @@
     <a href="https://www.mozilla.org/en-US/about/manifesto/">
         Mozilla Manifesto
     </a>
+
+## CSS basics
+- Atanomy of css ruleset
+    - `p {color: red;}`
+    - `p`: selector
+    - `color: red;`: declaration. property, property value.
+- Select multiple elements
+    ```
+    p,
+    li,
+    h1 {
+    color: red;
+    }
+    ```
+- Types of selectors
+    - element selector: `p` selects `<p>`
+    - ID selector: 
