@@ -59,4 +59,18 @@
 - Fonts and texts
     - <link href="https://fonts.googleapis.com/css?family=Open+Sans"
   rel="stylesheet" />
-    - 
+
+- CSS box models
+    - Box model:
+        - padding: space around the content
+        - border: the solid line just outside of the padding
+        - margin: space around outside of the border
+    - styling the body
+        - width, margin, background-color, padding, border
+
+
+## Javascript basics
+- hello world
+- let, const
+- `alert`, `document.querySelector`, etc. built in functions
+- self-defined function
