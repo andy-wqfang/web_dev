@@ -51,4 +51,12 @@
     ```
 - Types of selectors
     - element selector: `p` selects `<p>`
-    - ID selector: 
+    - ID selector: `#my_id` selects <p id="my_id"> and <a id="my_id">
+    - Class selector: `.my-class` selects <p class="my-class"> and <a class="my-class">
+    - Attribute selector: `img[src]` selects <img src="myimage.png"> but not <img> in general
+    - Pseudoclass selector: selects elements at their specified states.
+        - e.g. <a: hover> selects <a> only when a mouse pointer is hovering on it
+- Fonts and texts
+    - <link href="https://fonts.googleapis.com/css?family=Open+Sans"
+  rel="stylesheet" />
+    - 
