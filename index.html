@@ -1,32 +1,34 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>My test page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>选手抽奖</title>
     <link href="styles/style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet" />
+    <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <h1>Mozilla is cool</h1>
-    <img src="images/firefox-icon.png" alt="My test image" />
-    <p>At Mozilla, we're a global community of</b> </p>
-    <ul>
-        <li>technologists</li>
-        <li>thinkers</li>
-        <li>builders</li>
-    </ul>
-    <p>working together to keep the Internet alive and accessible, so people worldwide 
-      can be informed contributors and creators of the Web. 
-      We believe this act of human collaboration across an open platform 
-      is essential to individual growth and our collective future.</p>
-    <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a>
-      to learn even more about the values and principles that guide the pursuit of our mission.</p>
-    <button>Change user</button>
-    <script src="scripts/main.js"></script>
+    <main>
+      <header>
+        <span class="eyebrow">BADMINTON · LUCKY DRAW</span>
+        <a href="participants.csv" download>下载选手名单 ↗</a>
+      </header>
+      <section class="intro">
+        <p class="kicker">赛场之外，好运登场</p>
+        <h1>下一位幸运选手</h1>
+        <p>每次随机抽出一位，让好运揭晓。</p>
+      </section>
+      <section class="draw-card" aria-label="抽奖区域">
+        <p id="roster-status" role="status">正在读取选手名单…</p>
+        <div class="result" aria-live="polite" aria-atomic="true">
+          <span id="winner-number" class="number">—</span>
+          <h2 id="winner-name">好运，虚位以待</h2>
+          <p id="winner-details">点击下方按钮，揭晓本次幸运选手</p>
+        </div>
+        <button id="draw-button" type="button" disabled>随机抽取一位 <span aria-hidden="true">↗</span></button>
+        <p class="rule">每位选手机会相同 · 每次独立抽取 · 允许重复中奖</p>
+      </section>
+      <footer>一起挥拍，也一起收获好运。</footer>
+    </main>
   </body>
 </html>
